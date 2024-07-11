@@ -194,7 +194,7 @@ fmt.Println(a == a1,
 		a > b)
 }
 
-14
+//14
 func main() {
 	a := 1
     b := float32(1)
