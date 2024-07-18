@@ -26,7 +26,7 @@ func majorityElement(nums []uint8) uint8 {
 
 	//цикл для записи кол-ва вхождений в срез nums каждого числа
 	for _, number := range nums {
-		countMap[number]++ //при встрече увеличиваем значение на 1 для найденного ключа
+		countMap[number]++ //итерируемся на +1
 	}
 
 	//ищем наибольшее количество вхождений
@@ -38,7 +38,7 @@ func majorityElement(nums []uint8) uint8 {
 	for number, count := range countMap {
 		if count > maxCount {
 			maxCount = count     //перезапишем в макскоунт число если оно больше
-			frequentNum = number //перезаписываем number на каждой итерации
+			frequentNum = number //перезаписываем number
 		}
 
 	}
