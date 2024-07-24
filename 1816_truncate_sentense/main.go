@@ -34,6 +34,10 @@ func truncateSentence(s string, k int) string {
 	//разбиваем строку
 	words := strings.Split(s, " ")
 
+	if k > len(words) {
+		k = len(words)
+	}
+
 	//соберем строку до числа к
 	return strings.Join(words[:k], " ")
 }
