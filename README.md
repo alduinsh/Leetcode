@@ -1,2 +1,2 @@
 # Leetcode
-Golang exercises
+Golang / Python exercises
