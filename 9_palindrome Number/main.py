@@ -26,4 +26,3 @@ if __name__ == "__main__":
                 print(f"{num_int} не является палиндромом")
         except ValueError:
             print(f"{num} не является целым числом")
-    
